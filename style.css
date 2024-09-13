@@ -41,6 +41,7 @@ tr:hover {
 
 .head{
     text-align: center;
+    color: #996633;
 }
 h1 {
     margin-bottom: 20px;
@@ -62,6 +63,7 @@ h1 {
     padding: 15px;
     width: 200px; /* Adjust width as needed */
     text-align: center;
+    color: #996633;
 }
 
 .special-item img {
@@ -81,10 +83,13 @@ h1 {
 }
 .h1-special{
     text-align: center;
+   
+   
 }
 .about-h{
     text-align: center;
     margin-top: 20px;
+    color: #996633;
 }
 .about-p{
     text-align: center;
@@ -95,14 +100,24 @@ h1 {
 
 .talk{
     text-align: center;
+    
+}
+.talk-h{
+    color: #996633;
 }
 
-footer.social-media{
-    padding: 20px;
+footer.social-media {
+    padding: 10px;
     text-align: center;
+    
 }
+
 footer.social-media div {
     display: inline-block; 
+    padding: 10px; /* Space inside the box around the icons */
+    border: 2px solid #ddd; /* Light gray border color */
+    border-radius: 8px; /* Rounded corners for the box */
+    background-color: #fff; /* White background color for the box */
 }
 
 footer.social-media img {
