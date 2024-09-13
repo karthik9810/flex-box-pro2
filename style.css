@@ -1,0 +1,94 @@
+/* General styling for tables */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #d8d6cf;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+
+
+
+.table1 caption {
+    color: #ff5722;
+}
+
+
+.table2 caption {
+    color: #4caf50;
+}
+
+
+.head{
+    text-align: center;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Container for special items */
+.special-items-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* Individual special item styling */
+.special-item {
+    background-color: #fff;
+    padding: 15px;
+    width: 200px; /* Adjust width as needed */
+    text-align: center;
+}
+
+.special-item img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    
+}
+
+.special-item h4 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.special-item h4:last-of-type {
+    color: #f4b400; /* Highlight price */
+}
+.h1-special{
+    text-align: center;
+}
+.about-h{
+    text-align: center;
+    margin-top: 20px;
+}
+.about-p{
+    text-align: center;
+    word-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
