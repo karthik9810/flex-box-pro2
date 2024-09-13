@@ -141,10 +141,10 @@ footer.social-media {
 
 footer.social-media div {
     display: inline-block; 
-    padding: 10px; /* Space inside the box around the icons */
-    border: 2px solid #ddd; /* Light gray border color */
-    border-radius: 8px; /* Rounded corners for the box */
-    background-color: #fff; /* White background color for the box */
+    padding: 10px; 
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    background-color: #fff; 
 }
 
 footer.social-media img {
@@ -152,4 +152,10 @@ footer.social-media img {
     height: auto; 
     margin: 0 10px; 
     vertical-align: top; 
+}
+
+@media (max-width:375px) {
+    *{
+        color: #000000;
+    }
 }
