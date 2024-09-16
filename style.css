@@ -1,33 +1,59 @@
-.entire{
-    border: solid 2px;
-    background-color: #ddd;
+body{
+    background-color: #778696;
+    font-family: "Open Sans", sans-serif;
 }
 
-.img-header {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    height: 100vh;           
-  }
-  
-  .img-header img {
-   border: solid 2px;
-    height: auto; 
-    width: 800px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
+
+/* logo section  start */
+header{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+    color: #f1efe7;   
+}
+.logo-icon {
+    display: inline-block;
+    vertical-align:center;
+    font-size: 2rem;
+    
+}
+.logo{
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 11px;
+    font-weight: 400;
+}
+/* logo end section  */
+
+main{
+    background: white;
+    width: 50%;
+    margin: auto ;
+}
+.image-section{
+    width: 100%;
+    height: 500px;
+    background-image: url("Images/chilling-cafe-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*image section end */
+
+/** cofffee menu section */
 
 table {
-    width: 90%;
+    width: 80%;
     border-collapse: collapse;
     margin: 20px auto;
+    
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     padding: 12px;
     text-align: center;
 }
@@ -38,26 +64,16 @@ th {
 }
 
 tr:nth-child(even) {
+    background-color: #e2e2e2;
+}
+tr:nth-child(odd) {
     background-color: #f2f2f2;
 }
-
-tr:hover {
-    background-color: #ddd;
-}
-
-.table1 caption {
-    color: #ff5722;
-}
-
-
-.table2 caption {
-    color: #4caf50;
-}
-
 
 .head{
     text-align: center;
     color: #996633;
+    padding: 50px;
 }
 
 h1 {
@@ -66,62 +82,56 @@ h1 {
     color: #333;
 }
 
-/* Container for special items */
-.special-items-container {
+/* special contsiner secton */
+.section-heading{
+    text-align: center;
+    padding: 40px 0;
+    color: #996633;
+}
+
+
+.product-container{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 5px;
-    color: #996633;
+    justify-content: center;
 }
-.h1-special{
-    color: #996633;
-}
-
-.special-item {
-    
-    padding: 15px;
-    width: 200px; 
+.product-item{
+    margin: 0px 25px;
     text-align: center;
+    width: 300px;
     
     
 }
-
-.special-item img {
-    max-width: 100%;
-    height: auto;
+.product-item h4{
+   margin-top: 15px; 
+}
+.product-item p{
+    margin-top: 10px;
     
 }
-
-.special-item h4 {
-    margin: 10px 0;
-    font-size: 1.2em;
-    color: #333;
+.product-item img{
+ width: 100%;
+ 
+ 
 }
 
-.special-item h4:last-of-type {
-    color: #000000; 
-}
-.h1-special{
-    text-align: center;
-}
-
-
-.about-h{
-    text-align: center;
+.hr{
+    width: 600px;
+    margin: auto;
     margin-top: 20px;
-    color: #996633;
     
 }
-.about-p{
-    text-align: center;
-    word-spacing: 2px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-      
-}
 
+/* items - section */
+
+/* About section */
+p.about-para{
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
 
 .talk{
     text-align: center;
@@ -134,6 +144,7 @@ h1 {
 footer.social-media {
     padding: 10px;
     text-align: center;
+    flex-direction: row;
     
 }
 
@@ -143,6 +154,7 @@ footer.social-media div {
     border: 2px solid #ddd; 
     border-radius: 8px; 
     background-color: #fff; 
+    flex-direction: row;
 }
 
 footer.social-media img {
@@ -150,10 +162,83 @@ footer.social-media img {
     height: auto; 
     margin: 0 10px; 
     vertical-align: top; 
+    flex-direction: row;
 }
 
-@media (max-width:375px) {
-    *{
-        color: #000000;
+@media (max-width:575.98px) {
+    /* header section only */
+    header{
+        width: 95%;
+        padding: 40px 0; 
+ 
+    }
+    .logo-icon{
+        display: inline-block;
+        font-size: 2rem;
+    }
+    .logo{
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    main{
+        background: white;
+        width: 90%;
+        margin: auto;
+    }
+    /*SPECIAL ITEMS */
+     
+
+    /* image section */
+
+    .image-section{
+       height: 290px;
+        
+    }
+
+}
+
+
+/* small devices (indenpendance phones , tablets)*/
+@media (min-width: 576px) and (max-width: 767.98px){
+    /*your style here */
+
+
+    header{
+        width: 95%;
+        padding: 40px 0; 
+ 
+    }
+    main{
+        width: 80%;
+    }
+    .product-container{
+        flex-wrap: wrap;
+        
+    }
+    .product-item{
+        margin: 0px 25px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    /** */
+    header{
+        width: 80%;
+        padding: 40px 0; 
+ 
+    }
+    main{
+        width: 80%;
+    }
+
+    .product-container{
+        flex-wrap: wrap;
+        
+    }
+    .product-item{
+        margin: 0px 25px;
+        width: 100%;
     }
 }
